@@ -49,4 +49,4 @@ If SeedMeasure detects no seeds in your image, try decreasing the constant until
 
 **Data Availability**
 
-SeedMeasure is open-sourced (MIT License) and is available on GitHub ([adequate-soup/seed-measure: Python script for counting and measuring the area, width, and length of small seeds](https://github.com/adequate-soup/seed-measure)). Please open an issue on GitHub if you run into any problems or bugs in the script.
+SeedMeasure is open-sourced (MIT License) and is available here on GitHub. Please open an issue if you run into any problems or bugs in the script.
