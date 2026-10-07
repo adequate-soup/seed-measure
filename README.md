@@ -1,3 +1,9 @@
+**Installation Instructions**
+
+You can download the latest version of SeedMeasure from the [releases page](https://github.com/adequate-soup/seed-measure/releases).
+
+SeedMeasure is a command line utility written in Python and built with NumPy and OpenCV. SeedMeasure will run on any device with at least Python 3.6, OpenCV 3.0, and NumPy 1.13 to run; however, we strongly recommend upgrading these packages to at least versions 3.8, 4.0, and 1.14 respectively. Alternatively, we provide standalone executables of the script compiled for Windows (x86-64), Mac (x86-64 and Apple Silicon), and Linux (x86-64), which can be run as-is on modern computer hardware and do not require the installation of any dependencies.
+
 **Arguments**
 
 Example usage: seed\_measure \-i /path/to/photos \-o /path/to/output \-w 100
