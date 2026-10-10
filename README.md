@@ -12,7 +12,7 @@ Before you can execute the binaries on Mac and Linux, you must allow them to be 
 
 Example usage: `seed_measure -i /path/to/photos -o /path/to/output -w 100`
 
-This command above specifies the input directory for seed photos, the output directory for csv files and QC images, and the width of the printed box that the seeds are imaged in in millimeters.
+The line above specifies the input directory for seed photos, the output directory for csv files and QC images, and the width of the printed box that the seeds are imaged in in millimeters.
 
 | Argument: | Required / optional | Data type | Description |
 | :---- | :---- | :---- | :---- |
