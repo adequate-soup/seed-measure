@@ -1,14 +1,18 @@
+SeedMeasure is a command line utility written in Python and built with NumPy and OpenCV. SeedMeasure will run on any device with at least Python 3.6, OpenCV 3.0, and NumPy 1.13 to run; however, we strongly recommend upgrading these packages to at least versions 3.8, 4.0, and 1.14 respectively. Alternatively, we provide standalone executables of the script compiled for Windows (x86-64), Mac (x86-64 and Apple Silicon), and Linux (x86-64), which can be run as-is on modern computer hardware and do not require the installation of any dependencies.
+
 **Installation Instructions**
 
 You can download the latest version of SeedMeasure from the [releases page](https://github.com/adequate-soup/seed-measure/releases).
 
-SeedMeasure is a command line utility written in Python and built with NumPy and OpenCV. SeedMeasure will run on any device with at least Python 3.6, OpenCV 3.0, and NumPy 1.13 to run; however, we strongly recommend upgrading these packages to at least versions 3.8, 4.0, and 1.14 respectively. Alternatively, we provide standalone executables of the script compiled for Windows (x86-64), Mac (x86-64 and Apple Silicon), and Linux (x86-64), which can be run as-is on modern computer hardware and do not require the installation of any dependencies.
-
 SeedMeasure must be run from the command line (don't double-click on the exe or binaries). You can do this by dragging and dropping the SeedMeasure executable file into your operating system's terminal or command line.
 
-**Arguments**
+Before you can execute the binaries on Mac and Linux, you must allow them to be exucuted with the command: `chmod +x /path/to/seed_measure.bin`
 
-Example usage: seed\_measure \-i /path/to/photos \-o /path/to/output \-w 100
+**Usage**
+
+Example usage: `seed_measure -i /path/to/photos -o /path/to/output -w 100`
+
+This command above specifies the input directory for seed photos, the output directory for csv files and QC images, and the width of the printed box that the seeds are imaged in in millimeters.
 
 | Argument: | Required / optional | Data type | Description |
 | :---- | :---- | :---- | :---- |
@@ -29,7 +33,7 @@ NOTE: the default settings of the optional arguments should work for most seeds
 
 **Seed Imaging**
 
-Seeds must be imaged against a white sheet of photo paper within a printed reference box \[see fig\]. This box can be any size depending on your needs, but it must be a perfect square. Its outside dimensions are supplied (which SeedMeasure assumes to be in millimeters) as an argument using the \-w flag. The paper used for seed imaging should be placed on a lightbox in a darkened room to minimize shadows and ensure maximum contrast between seeds and background. Seeds should be spread apart manually before imaging to reduce clumping. SeedMeasure will exclude seeds that appear to be clumped, but minimizing the number of clumped seeds manually will improve accuracy. Images can be captured with a smartphone camera (ideally having a 12 MP sensor for medium to large-sized seeds, or a 50 MP sensor for *Arabidopsis thaliana* sized seeds or smaller).
+Seeds must be imaged against a white sheet of photo paper within a printed reference box. This box can be any size depending on your needs, but it must be a perfect square. Its outside dimensions are supplied (which SeedMeasure assumes to be in millimeters) as an argument using the \-w flag. The paper used for seed imaging should be placed on a lightbox in a darkened room to minimize shadows and ensure maximum contrast between seeds and background. Seeds should be spread apart manually before imaging to reduce clumping. SeedMeasure will exclude seeds that appear to be clumped, but minimizing the number of clumped seeds manually will improve accuracy. Images can be captured with a smartphone camera (ideally having a 12 MP sensor for medium to large-sized seeds, or a 50 MP sensor for *Arabidopsis thaliana* sized seeds or smaller).
 
 The filename of each input image will be used as the line name for measurements in the output CSV file (e.g., aribidopsis\_101.jpg is recorded as arabidopsis\_101 in line\_name column for each row of the output). You can supply these images individually to the program using the \-i flag, or you can put all your images in the same directory to analyze them in a single batch. 
 
