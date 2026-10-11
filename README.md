@@ -6,7 +6,7 @@ You can download the latest version of SeedMeasure from the [releases page](http
 
 SeedMeasure must be run from the command line (don't double-click on the exe or binaries). You can do this by dragging and dropping the SeedMeasure executable file into your operating system's terminal or command line.
 
-Before you can execute the binaries on Mac and Linux, you must allow them to be exucuted with the command: `chmod +x /path/to/seed_measure.bin`
+Before you can execute the binaries on Mac and Linux, you must give them execute privileges with the command: `chmod +x /path/to/seed_measure.bin`
 
 **Usage**
 
